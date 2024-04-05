@@ -1,0 +1,53 @@
+---
+title: "HDS"
+author: 
+output:
+  html_document:
+    theme: spacelab #sandstone #spacelab #flatly
+    highlight: pygments
+    toc: TRUE
+    toc_depth: 2
+    number_sections: TRUE
+    toc_float:
+      smooth_scroll: FALSE
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, results = "hide"}
+library(tidyverse)
+library(ggplot2)
+```
+
+# The Datasets
+
+## Dataset information
+
+For the primary cohort, they represent records of patients affected by sepsis potential preconditions (ante Sepsis-3 definition); for the study cohort, they represent only the patients' admissions defined by the novel Sepsis-3 definition.
+
+***Sepsis*** is a life-threatening condition caused by an exaggerated reaction of the body to an infection, that leads to organ failure or even death. Since sepsis can kill a patient even in just one hour, survival prediction is an urgent priority among the medical community: even if laboratory tests and hospital analyses can provide insightful information about the patient, in fact, they might not come in time to allow medical doctors to recognize an immediate death risk and treat it properly.
+The features of patients that has been recorded at the hospital admission are:
+
+-   sex,
+
+-   age,
+
+-   septic episode number.
+
+We considered a cohort of 110,204 patient admissions.
+
+```{r, fig.align = "center"}
+(survival_primary_cohort <- read_csv("/Users/eleonoramarcassa/Desktop/UniVe/I_anno /Health Data Science/project/dataset/s41598-020-73558-3_sepsis_survival_primary_cohort.csv"))
+```
+
+```{r, fig.align = "center"}
+(survival_study_cohort <- read_csv("/Users/eleonoramarcassa/Desktop/UniVe/I_anno /Health Data Science/project/dataset/s41598-020-73558-3_sepsis_survival_study_cohort.csv"))
+```
+
+```{r, fig.align = "center"}
+(survival_validation_cohort <- read_csv("/Users/eleonoramarcassa/Desktop/UniVe/I_anno /Health Data Science/project/dataset/s41598-020-73558-3_sepsis_survival_validation_cohort.csv"))
+```
