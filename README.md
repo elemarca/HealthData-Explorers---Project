@@ -7,6 +7,6 @@ The project aims to understand whether sepsis has some correlation with the vari
 This project was developed:
 
 - for the exam of **Health Data Science [EM1413]**
-- of the degree program** Data Analytics for Business and Society**
+- of the degree program **Data Analytics for Business and Society**
 - at **Università Ca' Foscari di Venezia**
 - by **Alberto Baresin**, **Nicolae Bologa**, **Eleonora Marcassa**
